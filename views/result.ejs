@@ -2,7 +2,7 @@
     <%if(movieData.Response==='False'){%>
         <h1>Movie Not Found</h1>
         <%}else{%>
-            <h1>Results</h1>
+            <h1 style="text-align: center;">Searched for "<%=search%>"</h1>
             <div class="row">
                 <%movieData['Search'].forEach(function(movie){%>
                     <div class="card" style="width: 18rem;">
@@ -12,8 +12,9 @@
                                 <%=movie.Title%>
                             </h5>
                             <p class="card-text">
-                                <%=movie.Year%> </p>
-                                    <a href="/result/<%=movie.imdbID%>" class="btn btn-info">Know more</a>
+                                <%=movie.Year%>
+                            </p>
+                            <a href="/result/<%=movie.imdbID%>" class="btn btn-info">Know more</a>
                         </div>
                     </div>
                     <%})%>

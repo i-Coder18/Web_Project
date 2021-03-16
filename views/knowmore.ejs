@@ -1,0 +1,23 @@
+<%- include("./partial/header")%>
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="<%=data.Poster%>" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h1 class="card-title" margin-bottom=0px><%=data.Title%> </h1>
+          <h7 class="card-title"> <b> <%=data.Year%></b></h7> <br>
+          <h8 class="card-title"> <b>Released Date :</b> <%=data.Released%></h8> <br>
+          <h8 class="card-title"> <b>RunTime :</b> <%=data.Runtime%></h8> <br>
+          <h8 class="card-title"> <b>Genre :</b> <%=data.Genre%></h8> <br>
+          <p class="card-text"><%=data.Plot%></p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+           
+        
+
+                <%- include("./partial/footer")%>

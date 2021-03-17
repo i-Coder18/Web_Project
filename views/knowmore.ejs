@@ -1,23 +1,71 @@
 <%- include("./partial/header")%>
-<div class="card mb-3" style="max-width: 540px;">
-    <div class="row no-gutters">
-      <div class="col-md-4">
-        <img src="<%=data.Poster%>" class="card-img" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h1 class="card-title" margin-bottom=0px><%=data.Title%> </h1>
-          <h7 class="card-title"> <b> <%=data.Year%></b></h7> <br>
-          <h8 class="card-title"> <b>Released Date :</b> <%=data.Released%></h8> <br>
-          <h8 class="card-title"> <b>RunTime :</b> <%=data.Runtime%></h8> <br>
-          <h8 class="card-title"> <b>Genre :</b> <%=data.Genre%></h8> <br>
-          <p class="card-text"><%=data.Plot%></p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-  </div>
-           
-        
 
-                <%- include("./partial/footer")%>
+  <head>
+    <style>
+      .container {
+        margin-left: 200px;
+      }
+      body{
+        background-color: #e9ecef;
+      }
+      .list-group {
+        margin-left: 350px;
+         margin-top: 100px;
+         
+      }
+      .list-group-item{
+        background-color: #e9ecef;
+      }
+    </style>
+  </head>
+
+  <ul class="list-group list-group-horizontal">
+    <li class="list-group-item"><img src="<%=data.Poster%>" alt="..." class="img-thumbnail"></li>
+    <li class="list-group-item">
+      <div class="" style="max-width: 400px;">
+          <div class="col-md-8" style="max-width:100%">
+              <h1 class="card-title" margin-bottom=0px>
+                <%=data.Title%>
+              </h1>
+              <h7 class="card-title"> <b>
+                  <%=data.Year%>
+                </b></h7> <br>
+              <h8 class="card-title"> <b>Released Date :</b>
+                <%=data.Released%>
+              </h8> <br>
+              <h8 class="card-title"> <b>RunTime :</b>
+                <%=data.Runtime%>
+              </h8> <br>
+              <h8 class="card-title"> <b>Genre :</b>
+                <%=data.Genre%>
+              </h8> <br>
+              <h8 class="card-title"> <b>Director :</b>
+                <%=data.Director%>
+              </h8> <br>
+              <h8 class="card-title"> <b>imdb Rating :</b>
+                <%=data.imdbRating%>
+              </h8> <br>
+              <h8 class="card-title"> <b>Awards :</b>
+                <%=data.Awards%>
+              </h8> <br>
+              <h8 class="card-title"> <b>Actors :</b>
+                <%=data.Actors%>
+              </h8> <br>
+              <br>
+              <p class="card-text">
+                <i><%=data.Plot%></i>
+              </p>
+              </div>
+          </div>
+        </div>
+      </div></li>
+  
+  </ul>
+
+
+ 
+
+
+
+
+  <%- include("./partial/footer")%>

@@ -1,4 +1,4 @@
-// api id = http://www.omdbapi.com/?i=tt3896198&apikey=71521f23
+
 
 const express = require('express');
 const request = require('request')

@@ -1,4 +1,16 @@
 <%- include("./partial/header")%>
+<head>
+    <style>
+         body{
+       background-color: #edf1f6;
+     }
+     .card{
+         background-color: #e9ecef;
+         box-shadow: 0 123px 126px 0 rgb(0 0 0 / 20%), 0 0px 123px 0 rgb(0 0 0 / 19%);
+  
+     }
+    </style>
+</head>
     <%if(movieData.Response==='False'){%>
         <h1>Movie Not Found</h1>
         <%}else{%>

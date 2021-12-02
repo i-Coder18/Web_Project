@@ -1,11 +1,11 @@
-
+  
 
 const express = require('express');
 const request = require('request')
 const app = express();
 const dotenv=require('dotenv')
 dotenv.config()
-app.set("view engine", 'ejs')
+app.set("view engine", 'ejs') 
 
 app.get('/', (req, res) => {
     res.render('homepage')
